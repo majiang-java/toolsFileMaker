@@ -5,4 +5,4 @@
 pathInput=E:/uftp/input/LoanApply/
 pathOutPut=E:/uftp/output/LoanResult/
 pathSuccess=E:/uftp/input/SuccessRepayment/
-*.分别对应不同的系统选择不同的点击文件
+* 分别对应不同的系统选择不同的点击文件
