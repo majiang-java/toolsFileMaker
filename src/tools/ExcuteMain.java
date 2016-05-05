@@ -153,11 +153,15 @@ public class ExcuteMain {
 		List<String[]> listin = filebeanin.getFiledata();
 		List<String[]> listOut = fileBeanout.getFiledata();
 		//初始化数据
+		
 		if(listOut.size() < listin.size()){
 			int count = listin.size() - listOut.size();
-		
 			for (int i = 0; i < count; i++) {
 				listOut.add(listOut.get(i));
+			}
+		}else if(listOut.size() > listin.size()){
+			for (int i = listOut.size()-1; i >= listin.size(); i--) {
+				listOut.remove(listOut.get(i));
 			}
 		}
 		for (int i = 0; i < listin.size(); i++) {
