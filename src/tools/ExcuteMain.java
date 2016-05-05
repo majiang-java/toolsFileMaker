@@ -217,7 +217,12 @@ public class ExcuteMain {
 					content.append("|+|");
 				}
 			}
-			content.append(System.getProperty("line.separator"));
+			if(i == data.size()-1){
+				
+			}else{
+				content.append(System.getProperty("line.separator"));
+			}
+
 		}
 		logger.info("content:"+content);
 		return content.toString();
